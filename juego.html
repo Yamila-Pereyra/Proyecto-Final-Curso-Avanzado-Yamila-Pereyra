@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <a href="index.html">
+            <svg>
+                <rect class="monitor" x="50" y="30"> </rect>
+                <rect class="pantalla" x="55" y="35"> </rect>
+                <rect class="linea" x="60" y="40"> </rect>
+                <rect class="linea2" x="60" y="45"> </rect>
+                <rect class="linea3" x="60" y="50"> </rect>
+                <rect class="linea4" x="60" y="55"> </rect>
+                <rect class="linea5" x="60" y="60"> </rect>
+                <rect class="base" x="80" y="80"> </rect>
+                <polygon points="60,90 120,90 140,100 40,100" class="teclado"> </polygon>
+            </svg>
+          </a>
+        </div>
+        <nav class="menu">
+              <a href="historia.html" class="nav-link">HISTORIA</a>
+              <a href="juego.html" class="nav-link">JUGUEMOS</a>
+        </nav>
+    </header>
+    
+    <div class="fondohistoria">
+       <img src="imagenes/img2.jpg" alt="Imagen de código" class="portada2">
+       <h1>JUGUEMOS UN POCO</h1>
+    </div>
+    <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+    <section class="juego">
+      <div class="vacio">  
+        <div class="cuadro1" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p class="arrastre">Arrastre y suelte la imagen aquí</p>
+        </div>
+        <div class="cuadro2" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p class="arrastre">Arrastre y suelte la imagen aquí</p>
+        </div>
+        <div class="cuadro3" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p class="arrastre">Arrastre y suelte la imagen aquí</p>
+        </div>
+      </div> 
+      <div class="rompe">  
+        
+            <img src="imagenes/Rompe1.png" width="300px" height="500px" class="f1"  alt="" id="rompe1"  draggable="true" ondragstart="drag(event)">
+        
+        
+            <img src="imagenes/rompe2.png" width="300px" height="500px" class="f2"  alt="" id="rompe2" draggable="true" ondragstart="drag(event)">
+        
+        
+            <img src="imagenes/Rompe3.png" width="300px" height="500px" class="f3" id="rompe3" draggable="true" ondragstart="drag(event)">
+        
+      </div> 
+      <div class="final">
+         <button class="reiniciar" onclick="reiniciar()">REINICIAR</button>
+     </div>
+    </section>
+    
+    <footer>
+        <div class="c1">
+            <img class="pie" src="imagenes/logo.png" alt="">
+        </div>
+        <div class="c2">
+            <p>PROGRAMACION</p>
+            <p>E</p>
+            <p>HISTORIA</p>
+        </div>
+        <div class="c3">
+            <P>Sitio con fines educativos - Creado por M.Victoria Lopez</P>
+        </div>
+        
+        
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
